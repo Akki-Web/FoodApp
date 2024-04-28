@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Product Here</title>
+</head>
+<body>
+<form method="post" th:action="@{/admins/savestudent}" th:object="${product}">
+	<table border="1" align="center">
+			
+	 <tr>
+		<td>foodName</td>
+		<td><input type="text" th:field="*{foodName}"></td>
+	</tr>
+	<tr>
+		<td>foodPrice</td>
+		<td><input type="text" th:field="*{foodPrice}"></td>
+	</tr>
+	<tr>
+		<td>foodCategory</td>
+		<td><input type="text"  th:field=*{foodCategory}></td>
+	</tr>
+	<tr>
+		<td>imageUrl</td>
+		<td><input type="file"  th:field="*{imageUrl}" ></td>
+	</tr>
+	
+	<tr>
+	<td><input type="submit" value="submit"></td>
+	</tr>
+			
+	</table>
+</form>
+
+</body>
+</html>

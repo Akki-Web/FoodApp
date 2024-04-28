@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Page</title>
+<link rel="stylesheet" href="" th:href="@{/Register.css}"/>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+<body>
+    <section class="container">
+      <header>Registration Form</header>
+      <form method="post" th:action="@{/users/register}" th:object="${user}" class="form">
+        <div class="input-box">
+          <label>First Name</label>
+          <input type="text" th:field="*{firstname}" placeholder="Enter First Name" required  />
+        </div>
+
+        <div class="input-box">
+          <label>Last Name</label>
+          <input type="text" th:field="*{lastname}" placeholder="Enter Last Name" required />
+        </div>
+        
+         <div class="input-box">
+          <label>Email</label>
+          <input type="text" th:field="*{email}" placeholder="Enter email address" required />
+        </div>
+        
+         <div class="input-box">
+          <label>Password</label>
+          <input type="text"  th:field="*{password}" placeholder="Enter Password" required />
+        </div>
+        
+         <div class="input-box">
+          <label>Mobile</label>
+          <input type="text" th:field="*{mobile}" placeholder="Enter email address" required />
+        </div>
+         <div class="input-box">
+          <label>Roles</label>
+          <input type="text"  th:field="*{roles}" placeholder="Enter role" required />
+        </div>
+        <button type="submit" value="submit">Submit</button>
+      </form>
+    </section>
+</html>
+
+</body>
+</html>

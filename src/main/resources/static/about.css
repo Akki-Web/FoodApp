@@ -1,0 +1,57 @@
+body{
+    background-color:#696969;
+}
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    font-size: 36px;
+}
+
+header p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* Style for the main content */
+main {
+    padding: 20px;
+}
+
+.about-section {
+    margin-bottom: 30px;
+
+}
+
+.about-section h2 {
+    color: #FFFAF0;
+    font-size: 24px;
+}
+
+.about-section p {
+    color: #FFFAF0;
+    font-size: 16px;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+    color: #FFFAF0;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
